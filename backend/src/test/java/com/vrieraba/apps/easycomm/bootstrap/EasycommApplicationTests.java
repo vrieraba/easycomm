@@ -1,4 +1,4 @@
-package com.vrieraba.apps.easycomm;
+package com.vrieraba.apps.easycomm.bootstrap;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
