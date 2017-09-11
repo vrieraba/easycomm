@@ -1,11 +1,25 @@
-<h2>Here are some users: </h2>
-<li *ngFor="let i of users">
-<div class="user">
-    <span> <b> Name: </b> {{ i.name }}  || </span>
-    <span> <b> Age: </b> {{ i.age }} </span>
-    <span> <button class="btn btn-primary" (click)="details(i.id)"> details </button> </span>
-</div>
-</li>
+<ol class="breadcrumb">
+  <li class="breadcrumb-item active">
+    <a routerLink="/dashboard">Usuarios</a>
+  </li>
+</ol>
+
+<table class="table table-hover table-responsive">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>View</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let i of users">
+        <tr>
+            <td>{{ i.name }}</td>
+            <td>{{ i.age }}</td>
+            <td><button class="btn btn-primary" (click)="details(i.id)"> details </button></td>
+        </tr>
+    </tbody>
+</table>
 
 <hr>
 

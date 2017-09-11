@@ -10,4 +10,8 @@ import { UsersComponent } from './users/users.component';
 
 export class AppComponent {
     title = 'EasyComm';
+
+    ngOnInit() {
+
+    }
 }

@@ -1,0 +1,4 @@
+@media (min-width: 992px)
+#mainNav .navbar-brand {
+    width: 250px;
+}
